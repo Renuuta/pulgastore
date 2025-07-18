@@ -1,5 +1,5 @@
 Integrante del equipo:
 
-Nombre: [Tu Nombre]
-Usuario de GitHub: [TuUsuarioGitHub]
-Repositorio: https://github.com/[TuUsuarioGitHub]/[NombreDelRepositorio]
+Nombre: Renata Mardones
+Usuario de GitHub: Renuuta
+Repositorio: https://github.com/Renuuta/pulgastore
