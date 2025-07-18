@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulga Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Fancybox plugin -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <!-- DataTables plugin -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <!-- Navbar mejorado -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" alt="Pulga Store" width="32" height="32" class="d-inline-block align-text-top me-2">Pulga Store
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 text-center mb-4">
+                <h1 class="display-5 fw-bold">Bienvenido a Pulga Store</h1>
+                <p class="lead">Tu tienda online de confianza para productos únicos.</p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="productos">
+            <!-- Ejemplo de productos responsivos -->
+            <div class="col">
+                <div class="card h-100">
+                    <a data-fancybox="gallery" href="img/producto1.jpg">
+                        <img src="img/producto1.jpg" class="card-img-top" alt="Producto 1">
+                    </a>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">Descripción breve del producto 1.</p>
+                        <button class="btn btn-primary btn-comprar mt-auto">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a data-fancybox="gallery" href="img/producto2.jpg">
+                        <img src="img/producto2.jpg" class="card-img-top" alt="Producto 2">
+                    </a>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción breve del producto 2.</p>
+                        <button class="btn btn-primary btn-comprar mt-auto">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a data-fancybox="gallery" href="img/producto3.jpg">
+                        <img src="img/producto3.jpg" class="card-img-top" alt="Producto 3">
+                    </a>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="card-text">Descripción breve del producto 3.</p>
+                        <button class="btn btn-primary btn-comprar mt-auto">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tabla de pedidos -->
+    <div class="container mt-5">
+        <h2 class="mb-4 text-center">Pedidos recientes</h2>
+        <div class="table-responsive">
+            <table id="tablaPedidos" class="display table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>ID Pedido</th>
+                        <th>Cliente</th>
+                        <th>Producto</th>
+                        <th>Estado</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>001</td><td>Juan Pérez</td><td>Producto 1</td><td>Entregado</td><td>2025-07-10</td></tr>
+                    <tr><td>002</td><td>María López</td><td>Producto 2</td><td>Pendiente</td><td>2025-07-15</td></tr>
+                    <tr><td>003</td><td>Carlos Ruiz</td><td>Producto 3</td><td>En camino</td><td>2025-07-17</td></tr>
+                    <tr><td>004</td><td>Ana Torres</td><td>Producto 1</td><td>Pendiente</td><td>2025-07-18</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Footer mejorado -->
+    <footer class="footer mt-5 bg-dark text-white">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6 text-start">
+                    <span>&copy; 2025 Pulga Store. Todos los derechos reservados.</span>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="mailto:contacto@pulgastore.com" class="text-white me-3">contacto@pulgastore.com</a>
+                    <a href="#" class="text-white">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

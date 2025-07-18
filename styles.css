@@ -1,0 +1,71 @@
+/* Estilos personalizados para Pulga Store */
+body {
+    background-color: #f8f9fa;
+}
+.navbar {
+    margin-bottom: 30px;
+}
+.footer {
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.card {
+    margin-bottom: 20px;
+}
+/* Efecto hover en tarjetas */
+.card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en botones */
+.btn-primary:hover {
+    background-color: #ff9800;
+    border-color: #ff9800;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+/* Animación para formulario de contacto */
+#contactForm {
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mensajes de éxito/error en formularios */
+.form-success {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.form-error {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Navbar responsiva */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #ff9800 !important;
+}
+
+/* Footer responsivo */
+.footer {
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
